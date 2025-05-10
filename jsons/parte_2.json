@@ -1,0 +1,148 @@
+[
+    {
+        "personaje": "Hitori",
+        "imagen_personaje": "assets/personajes/hitori/personaje_principal_hitori.png",
+        "fondo": "assets/fondos/fondo_refrigerador.jpg",
+        "texto": "Bueno, creo que eso es energía suficiente para ir a trabajar.",
+        "lado_personaje": "izquierda",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo.wav"
+    },
+    {
+        "personaje": "Hitori",
+        "imagen_personaje": "assets/personajes/hitori/personaje_principal_hitori.png",
+        "fondo": "assets/fondos/fondo_refrigerador.jpg",
+        "texto": "No voy a calentar mi desayuno, no quiero perder tiempo en calentar algo tan pequeño",
+        "lado_personaje": "izquierda",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo.wav"
+    },
+    {
+        "personaje": "Hitori",
+        "imagen_personaje": "assets/personajes/hitori/personaje_principal_hitori.png",
+        "fondo": "assets/fondos/fondo_refrigerador.jpg",
+        "texto": "*ñam ñam* Creo que con eso es suficiente, todavía tengo tiempo para ir a sentarme en mi sillón y ver\ntelevisión.",
+        "lado_personaje": "izquierda",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo.wav", 
+        "efecto_sonido": "assets/sonidos/efectos_sonidos/comer.wav",
+        "tipo_efecto": "comer"
+    },
+    {
+        "personaje": "Hitori",
+        "imagen_personaje": "assets/personajes/hitori/personaje_principal_hitori.png",
+        "fondo": "assets/fondos/fondo_sala.jpg",
+        "texto": "¿De verdad tengo que esperar tanto para ir a trabajar?",
+        "lado_personaje": "izquierda",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo.wav"
+    },
+    {
+        "personaje": "Hitori",
+        "imagen_personaje": "assets/personajes/hitori/personaje_principal_hitori.png",
+        "fondo": "assets/fondos/fondo_sala.jpg",
+        "texto": "Bueno, por mientras estaré viendo cualquier anime que este en la televisión, es lo mejor que puedo\nhacer ahora.",
+        "lado_personaje": "izquierda",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo.wav"
+    },
+    {
+        "personaje": "Hitori",
+        "imagen_personaje": "assets/personajes/hitori/personaje_principal_hitori.png",
+        "fondo": "assets/fondos/fondo_sala.jpg",
+        "texto": "Pero...",
+        "lado_personaje": "izquierda",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo.wav"
+    },
+    {
+        "personaje": "Hitori",
+        "imagen_personaje": "assets/personajes/hitori/personaje_principal_hitori.png",
+        "fondo": "assets/fondos/fondo_sala.jpg",
+        "texto": "*se rasca los ojos* necesito que mi cuerpo se levante bien, a veces simplemente veo cosas raras que\nno existen cuando estoy así.",
+        "lado_personaje": "izquierda",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo.wav"
+    },
+    {
+        "personaje": "Hitori",
+        "imagen_personaje": "assets/personajes/hitori/personaje_principal_hitori.png",
+        "fondo": "assets/fondos/fondo_reloj.jpg",
+        "texto": "Ya es hora de ir a trabajar, de verdad no quiero ir, pero si falto mi jefe solo me va a molestar y me\nva a regañar por faltar sin avisar.",
+        "lado_personaje": "izquierda",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo.wav"
+    },
+    {
+        "personaje": "Hitori",
+        "imagen_personaje": "assets/personajes/hitori/personaje_principal_hitori.png",
+        "fondo": "assets/fondos/fondo_reloj.jpg",
+        "texto": "Aunque recuerdo haber visto ese reloj con comida encima, tal vez se haya caído la comida.",
+        "lado_personaje": "izquierda",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo.wav"
+    },
+    {
+        "personaje": "Hitori",
+        "imagen_personaje": "assets/personajes/hitori/personaje_principal_hitori.png",
+        "fondo": "assets/fondos/fondo_reloj.jpg",
+        "texto": "Pero no importa, me tengo que ir ya, antes de llegar tarde y que mi jefe me regañe.",
+        "lado_personaje": "izquierda",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo.wav"
+    },
+    {
+        "personaje": "Hitori",
+        "imagen_personaje": "assets/personajes/hitori/personaje_principal_hitori.png",
+        "fondo": "assets/fondos/fondo_oficina.jpg",
+        "texto": "Creo que llegue a tiempo, no debería de haber ningún problema con mi jefe.",
+        "lado_personaje": "izquierda",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo.wav"
+    },
+    {
+        "personaje": "Jefe",
+        "imagen_personaje": "assets/personajes/personajes_secundarios/personaje_secundario_hombre.png",
+        "fondo": "assets/fondos/fondo_oficina.jpg",
+        "texto": "Buenas tardes, Hitori, en tu escritorio esta todo el trabajo que deberías de terminar para hoy, no\nolvides que la próxima semana tienes junta con tus compañeros para discutir sobre un proyecto.",
+        "lado_personaje": "derecha",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo.wav"
+    },
+    {
+        "personaje": "Hitori",
+        "imagen_personaje": "assets/personajes/hitori/personaje_principal_hitori.png",
+        "fondo": "assets/fondos/fondo_oficina.jpg",
+        "texto": "Claro, no lo olvidare, me pondré a hacer mi trabajo ahora mismo.",
+        "lado_personaje": "izquierda",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo.wav"
+    },
+    {
+        "personaje": "Jefe",
+        "imagen_personaje": "assets/personajes/personajes_secundarios/personaje_secundario_hombre.png",
+        "fondo": "assets/fondos/fondo_oficina.jpg",
+        "texto": "Claro, ya me retiro a hacer mi trabajo.",
+        "lado_personaje": "derecha",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo.wav"
+    },
+    {
+        "personaje": "Hitori",
+        "imagen_personaje": "assets/personajes/hitori/personaje_principal_hitori.png",
+        "fondo": "assets/fondos/fondo_oficina.jpg",
+        "texto": "Demasiado trabajo para hoy, hay veces donde no quiero hacer nada y quedarme sentado en mi oficina\nviendo a la nada.",
+        "lado_personaje": "izquierda",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo.wav"
+    },
+    {
+        "personaje": "Hitori",
+        "imagen_personaje": "assets/personajes/hitori/personaje_principal_hitori.png",
+        "fondo": "assets/fondos/fondo_oficina.jpg",
+        "texto": "¿Debería de hablar con mis compañeros sobre que vamos a discutir en la reunión?",
+        "lado_personaje": "izquierda",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo.wav",
+        "pregunta":"¿Ir con los compañeros?",
+        "mostrar_botones": true,
+        "opciones": [
+            {
+                "texto": "Ir con los compañeros",
+                "archivo": "jsons/parte_3_1.json"
+            },
+            {
+                "texto": "Quedarse trabajando en tu oficina ",
+                "archivo": "jsons/parte_3.json"
+            },
+            {
+                "texto": "No hacer nada y solo quedarte sentado en tu oficina",
+                "archivo": "jsons/parte_3_2.json"
+            }
+        ]
+    }
+]

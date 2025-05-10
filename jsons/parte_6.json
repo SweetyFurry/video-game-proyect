@@ -1,0 +1,27 @@
+[
+    {
+        "narrador": true,
+        "fondo": "assets/fondos/fondo_negro.jpg",
+        "pregunta":"...",
+        "texto": "",
+        "efecto_sonido": "assets/sonidos/efectos_sonidos/disparo.wav"
+    },
+    {
+        "narrador": true,
+        "fondo": "assets/fondos/fondo_negro.jpg",
+        "pregunta":"...",
+        "texto": "..."
+    },
+    {
+        "narrador": true,
+        "fondo": "assets/fondos/fondo_negro.jpg",
+        "pregunta":"...",
+        "texto": "..."
+    },
+    {
+        "narrador": true,
+        "fondo": "assets/fondos/fondo_negro.jpg",
+        "pregunta":"...",
+        "texto": "..."
+    }
+]

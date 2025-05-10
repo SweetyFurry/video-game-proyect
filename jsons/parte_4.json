@@ -1,0 +1,139 @@
+[
+    {
+        "narrador": true,
+        "fondo": "assets/fondos/fondo_negro.jpg",
+        "texto": "Destruye la cámara y la tira a la basura.",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo_camara.wav",
+        "efecto_sonido": "assets/sonidos/efectos_sonidos/romper.wav"
+    },
+    {
+        "narrador": true,
+        "fondo": "assets/fondos/fondo_negro.jpg",
+        "texto": "Es un poco raro que una simple cámara no tenga puertos, pero es mucho más raro que haya una cámara\nahí.",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo_camara.wav"
+    },
+    {
+        "narrador": true,
+        "fondo": "assets/fondos/fondo_negro.jpg",
+        "texto": "Prefieres no pensar mucho en eso, ya que no quieres estresarte y simplemente quieres que los días\npasen.",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo_camara.wav"
+    },
+    {
+        "narrador": true,
+        "fondo": "assets/fondos/fondo_negro.jpg",
+        "texto": "Solo quieres estar como estabas antes, sin tantas preocupaciones...",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo_camara.wav"
+    },
+    {
+        "personaje": "Hitori",
+        "fondo": "assets/fondos/fondo_negro.jpg",
+        "texto": "No dormí bien. Cada pequeño sonido me mantenía despierto. Esa cámara... no puedo dejar de pensar en\nella.",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo_camara.wav"
+    },
+    {
+        "personaje": "Hitori",
+        "fondo": "assets/fondos/fondo_negro.jpg",
+        "texto": "Hoy revisaré toda la casa a ver si encuentro otra cámara, revisare cada rincón, no importa si llego\ntarde al trabajo... no puedo vivir con esta duda.",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo_camara.wav"
+    },
+    {
+        "personaje": "Hitori",
+        "fondo": "assets/fondos/fondo_negro.jpg",
+        "texto": "Si hay alguien mirándome, lo voy a descubrir.",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo_camara.wav"
+    },
+    {
+        "personaje": "Hitori",
+        "imagen_personaje": "assets/personajes/hitori/personaje_principal_hitori.png",
+        "fondo": "assets/fondos/fondo_cuarto_1.jpg",
+        "texto": "Nada detrás del armario... nada debajo de la cama...",
+        "lado_personaje": "izquierda",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo_camara.wav"
+    },
+    {
+        "narrador": true,
+        "fondo": "assets/fondos/fondo_cuarto_1.jpg",
+        "texto": "Revisa cada enchufe, cada lámpara, cada mueble. Encuentra dos cámaras más. Una dentro de toda la ropa\ntirada en su habitación y otra cerca de su pc.",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo_camara.wav"
+    },
+    {
+        "personaje": "Hitori",
+        "imagen_personaje": "assets/personajes/hitori/personaje_principal_hitori.png",
+        "fondo": "assets/fondos/fondo_cuarto_1.jpg",
+        "texto": "¡¿Qué es esto?! ¡¿Esto es real?! No, esto no puede ser posible.",
+        "lado_personaje": "izquierda",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo_camara.wav"
+    },
+    {
+        "personaje": "Hitori",
+        "imagen_personaje": "assets/personajes/hitori/personaje_principal_hitori.png",
+        "fondo": "assets/fondos/fondo_cuarto_1.jpg",
+        "texto": "¿Entre la noche alguien entro a mi casa y coloco esas cámaras?",
+        "lado_personaje": "izquierda",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo_camara.wav"
+    },
+    {
+        "personaje": "Hitori",
+        "imagen_personaje": "assets/personajes/hitori/personaje_principal_hitori.png",
+        "fondo": "assets/fondos/fondo_cuarto_1.jpg",
+        "texto": "No lo creo, que sentido tendría colocar cámaras en la ropa sucia y cerca del pc.",
+        "lado_personaje": "izquierda",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo_camara.wav"
+    },
+    {
+        "personaje": "Hitori",
+        "imagen_personaje": "assets/personajes/hitori/personaje_principal_hitori.png",
+        "fondo": "assets/fondos/fondo_cuarto_1.jpg",
+        "texto": "¿Me están observando? No...",
+        "lado_personaje": "izquierda",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo_camara.wav"
+    },
+    {
+        "narrador": true,
+        "fondo": "assets/fondos/fondo_refrigerador_desordenado.jpg",
+        "texto": "No come. Tira las cajas vacías al suelo con rabia, buscando entre restos de comida y envoltorios.",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo_camara.wav"
+    },
+    {
+        "personaje": "Hitori",
+        "imagen_personaje": "assets/personajes/hitori/personaje_principal_hitori.png",
+        "fondo": "assets/fondos/fondo_refrigerador_desordenado.jpg",
+        "texto": "No voy a permitirlo, no puedo dejar que me estén grabando, ahora sé que esto es real...",
+        "lado_personaje": "izquierda",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo_camara.wav"
+    },
+    {
+        "narrador": true,
+        "fondo": "assets/fondos/fondo_sala.jpg",
+        "texto": "Se sienta en su sofá, respirando agitado. El televisor encendido, pero no lo mira. Observa cada rincón\nde la habitación.",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo_camara.wav"
+    },
+    {
+        "personaje": "Hitori",
+        "imagen_personaje": "assets/personajes/hitori/personaje_principal_hitori.png",
+        "fondo": "assets/fondos/fondo_sala.jpg",
+        "texto": "Necesito una cámara. Necesito grabar quién entra aquí. Necesito protegerme.",
+        "lado_personaje": "izquierda",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo_camara.wav"
+    },
+    {
+        "personaje": "Hitori",
+        "imagen_personaje": "assets/personajes/hitori/personaje_principal_hitori.png",
+        "fondo": "assets/fondos/fondo_sala.jpg",
+        "texto": "Voy a instalar mis propias cámaras. Si ellos pueden verme, yo también puedo verlos a ellos.",
+        "lado_personaje": "izquierda",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo_camara.wav",
+        "pregunta":"¿Comprar?",
+        "mostrar_botones": true,
+        "opciones": [
+            {
+                "texto": "Comprar varias cámaras y equipo de vigilancia en una tienda online",
+                "archivo": "jsons/parte_5.json"
+            },
+            {
+                "texto": "Comprar varias cámaras y equipo de vigilancia en una tienda física",
+                "archivo": "jsons/parte_5_1.json"
+            }
+        ]
+    }
+]

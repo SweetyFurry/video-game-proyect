@@ -1,0 +1,179 @@
+[
+    {
+        "personaje": "Hitori",
+        "imagen_personaje": "assets/personajes/hitori/personaje_principal_hitori.png",
+        "fondo": "assets/fondos/fondo_oficina.jpg",
+        "texto": "No lo creo, deben de estar mejor sin mi ayuda, solamente me voy a enfocar en hacer mi trabajo y ya.",
+        "lado_personaje": "izquierda",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo.wav"
+    },
+    {
+        "narrador": true,
+        "fondo": "assets/fondos/fondo_negro.jpg",
+        "texto": "Pasan 8 horas de trabajo.",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo.wav",
+        "efecto_sonido": "assets/sonidos/efectos_sonidos/reloj.wav"
+    },
+    {
+        "narrador": true,
+        "fondo": "assets/fondos/fondo_negro.jpg",
+        "texto": "Ya es de noche y la oficina ya está casi vacía",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo.wav"
+    },
+    {
+        "narrador": true,
+        "fondo": "assets/fondos/fondo_negro.jpg",
+        "texto": "Tienes las luces de tu oficina apagadas, no te gusta mucho la luz y prefieres trabajar sin luz.",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo.wav"
+    },
+    {
+        "narrador": true,
+        "fondo": "assets/fondos/fondo_negro.jpg",
+        "texto": "En el fondo quieres ayuda, pero no tienes el suficiente valor para pedirla.",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo.wav"
+    },
+    {
+        "narrador": true,
+        "fondo": "assets/fondos/fondo_negro.jpg",
+        "texto": "Aunque no le tomas importancia, ya que no te das cuenta de que necesitas ayuda.",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo.wav"
+    },
+    {
+        "narrador": true,
+        "fondo": "assets/fondos/fondo_negro.jpg",
+        "texto": "Simplemente sigues con tu vida normal y repetitiva.",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo.wav"
+    },
+    {
+        "narrador": true,
+        "fondo": "assets/fondos/fondo_negro.jpg",
+        "texto": "Ahora regresas a casa solo para estar en tu computadora sentado viendo videos en YouTube\no simplemente jugando juegos en solitario",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo.wav"
+    },
+    {
+        "personaje": "Hitori",
+        "imagen_personaje": "assets/personajes/hitori/personaje_principal_hitori.png",
+        "fondo": "assets/fondos/fondo_cuarto_1_noche.jpg",
+        "texto": "Bueno, ya he terminado de trabajar ahora toca perder el tiempo jugando o viendo videos en YouTube.",
+        "lado_personaje": "izquierda",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo.wav"
+    },
+    {
+        "personaje": "Hitori",
+        "imagen_personaje": "assets/personajes/hitori/personaje_principal_hitori.png",
+        "fondo": "assets/fondos/fondo_cuarto_1_noche.jpg",
+        "texto": "Hmmmmmm, ¿Qué podré jugar o ver? Aun no termino el ciberpunk 2069, creo que eso jugare.",
+        "lado_personaje": "izquierda",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo.wav"
+    },
+    {
+        "personaje": "Hitori",
+        "imagen_personaje": "assets/personajes/hitori/personaje_principal_hitori.png",
+        "fondo": "assets/fondos/fondo_cuarto_1_noche.jpg",
+        "texto": "Pero ¿qué es esto? No recuerdo haber dejado mi pc en modo reposo, tal vez se me olvido apagarla por\ncompleto, aunque es un poco raro, ya que no suelo olvidarme de estas cosas.",
+        "lado_personaje": "izquierda",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo.wav"
+    },
+    {
+        "narrador": true,
+        "fondo": "assets/fondos/fondo_negro.jpg",
+        "texto": "Pasan varias horas y termina acostado en su cama, a punto de dormir.",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo.wav",
+        "efecto_sonido": "assets/sonidos/efectos_sonidos/reloj.wav"
+    },
+    {
+        "personaje": "Hitori",
+        "imagen_personaje": "assets/personajes/hitori/personaje_principal_hitori.png",
+        "fondo": "assets/fondos/fondo_cuarto_1_noche_ventana_negro.jpg",
+        "texto": "Huh...",
+        "lado_personaje": "izquierda",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo.wav"
+    },
+    {
+        "personaje": "Hitori",
+        "imagen_personaje": "assets/personajes/hitori/personaje_principal_hitori.png",
+        "fondo": "assets/fondos/fondo_cuarto_1_noche_ventana_negro.jpg",
+        "texto": "¿Qué es eso?",
+        "lado_personaje": "izquierda",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo.wav"
+    },
+    {
+        "narrador": true,
+        "fondo": "assets/fondos/fondo_cuarto_1_noche_ventana_negro.jpg",
+        "texto": "Prende la linterna de su celular y alumbra a los gatos que están fuera de su casa y al punto dentro\nde su estantería",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo.wav",
+        "efecto_sonido": "assets/sonidos/efectos_sonidos/linterna.wav"
+    },
+    {
+        "personaje": "Hitori",
+        "imagen_personaje": "assets/personajes/hitori/personaje_principal_hitori.png",
+        "fondo": "assets/fondos/fondo_cuarto_1_noche_ventana.jpg",
+        "texto": "De nuevo ese cochino gato asustándome, de verdad que no se ven en la noche porque son negros",
+        "lado_personaje": "izquierda",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo.wav"
+    },
+    {
+        "personaje": "Hitori",
+        "imagen_personaje": "assets/personajes/hitori/personaje_principal_hitori.png",
+        "fondo": "assets/fondos/fondo_cuarto_1_noche_ventana.jpg",
+        "texto": "¿Aunque qué es ese punto que está ahí?",
+        "lado_personaje": "izquierda",
+        "efecto_sonido": "assets/sonidos/efectos_sonidos/shock.wav"
+    },
+    {
+        "personaje": "Hitori",
+        "imagen_personaje": "assets/personajes/hitori/personaje_principal_hitori.png",
+        "fondo": "assets/fondos/fondo_cuarto_1_noche_ventana.jpg",
+        "texto": "Espera, eso es una... ¿cámara?",
+        "lado_personaje": "izquierda",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo_camara.wav"
+    },
+    {
+        "personaje": "Hitori",
+        "imagen_personaje": "assets/personajes/hitori/personaje_principal_hitori.png",
+        "fondo": "assets/fondos/fondo_cuarto_1_noche_ventana_camara.jpg",
+        "texto": "Pero ¿qué? ¿Por qué esta esto aquí? ¿Alguien entro a mi casa?",
+        "lado_personaje": "izquierda",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo_camara.wav"
+    },
+    {
+        "personaje": "Hitori",
+        "imagen_personaje": "assets/personajes/hitori/personaje_principal_hitori.png",
+        "fondo": "assets/fondos/fondo_cuarto_1_noche_ventana_camara.jpg",
+        "texto": "No, no puede ser posible, todo estaba en orden cuando llegue, las cerraduras no estaban dañadas ni\nnada parecido.",
+        "lado_personaje": "izquierda",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo_camara.wav"
+    },
+    {
+        "personaje": "Hitori",
+        "imagen_personaje": "assets/personajes/hitori/personaje_principal_hitori.png",
+        "fondo": "assets/fondos/fondo_cuarto_1_noche_ventana_camara.jpg",
+        "texto": "¿Como puede ser esto posible? ¿La abre puesto yo? No lo creo, es algo extraño que esta cámara haya\naparecido ahí, yo ni tengo cámaras en mi casa...",
+        "lado_personaje": "izquierda",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo_camara.wav"
+    },
+    {
+        "personaje": "Hitori",
+        "imagen_personaje": "assets/personajes/hitori/personaje_principal_hitori.png",
+        "fondo": "assets/fondos/fondo_cuarto_1_noche_ventana_camara.jpg",
+        "texto": "Simplemente lo voy a olvidar y voy a destruir la cámara, por lo que veo no tiene ningún puerto, así\nque no le podré sacar la información.",
+        "lado_personaje": "izquierda",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo_camara.wav",
+        "pregunta":"¿Investigar?",
+        "mostrar_botones": true,
+        "opciones": [
+            {
+                "texto": "Verificar si hay más cámaras en el cuarto",
+                "archivo": "jsons/parte_4_1.json"
+            },
+            {
+                "texto": "Verificar si hay más cámaras en la casa",
+                "archivo": "jsons/parte_4_1.json"
+            },
+            {
+                "texto": "Simplemente ir a dormir de nuevo",
+                "archivo": "jsons/parte_4.json"
+            }
+        ]
+    }
+]

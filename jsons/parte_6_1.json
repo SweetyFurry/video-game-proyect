@@ -1,0 +1,26 @@
+[
+    {
+        "narrador": true,
+        "fondo": "assets/fondos/fondo_negro.jpg",
+        "pregunta":"¿Valió la pena?",
+        "texto": "¿Valió la pena?"
+    },
+    {
+        "narrador": true,
+        "fondo": "assets/fondos/fondo_negro.jpg",
+        "pregunta":"¿Creíste que encontrarías a alguien?",
+        "texto": "¿Creíste que encontrarías a alguien?"
+    },
+    {
+        "narrador": true,
+        "fondo": "assets/fondos/fondo_negro.jpg",
+        "pregunta":"Que tontería, ya no tienes trabajo, eso era lo único que te mantenía vivo.",
+        "texto": "Que tontería, ya no tienes trabajo, eso era lo único que te mantenía vivo."
+    },
+    {
+        "narrador": true,
+        "fondo": "assets/fondos/fondo_negro.jpg",
+        "pregunta":"¿Ahora que vas a hacer?",
+        "texto": "¿Ahora que vas a hacer?"
+    }
+]

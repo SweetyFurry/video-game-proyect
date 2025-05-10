@@ -1,0 +1,343 @@
+[
+    {
+        "personaje": "Hitori",
+        "imagen_personaje": "assets/personajes/hitori/personaje_principal_hitori.png",
+        "fondo": "assets/fondos/fondo_puerta_principal.jpg",
+        "texto": "Un momento, ¿de verdad tengo que salir para ir a comprar cámaras?",
+        "lado_personaje": "izquierda",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo_camara.wav"
+    },
+    {
+        "personaje": "Hitori",
+        "imagen_personaje": "assets/personajes/hitori/personaje_principal_hitori.png",
+        "fondo": "assets/fondos/fondo_puerta_principal.jpg",
+        "texto": "No, claro que no…",
+        "lado_personaje": "izquierda",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo_camara.wav"
+    },
+    {
+        "personaje": "Hitori",
+        "imagen_personaje": "assets/personajes/hitori/personaje_principal_hitori.png",
+        "fondo": "assets/fondos/fondo_puerta_principal.jpg",
+        "texto": "¿Qué tal si en lo que voy a la tienda vuelven a entrar y vuelven a colocar más cámaras? No dejare\nque eso pase.",
+        "lado_personaje": "izquierda",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo_camara.wav"
+    },
+    {
+        "personaje": "Hitori",
+        "imagen_personaje": "assets/personajes/hitori/personaje_principal_hitori.png",
+        "fondo": "assets/fondos/fondo_puerta_principal.jpg",
+        "texto": "Simplemente voy a comprar todo en una tienda online.",
+        "lado_personaje": "izquierda",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo_camara.wav"
+    },
+    {
+        "personaje": "Hitori",
+        "imagen_personaje": "assets/personajes/hitori/personaje_principal_hitori.png",
+        "fondo": "assets/fondos/fondo_puerta_principal.jpg",
+        "texto": "Si, que buena idea…",
+        "lado_personaje": "izquierda",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo_camara.wav"
+    },
+    {
+        "narrador": true,
+        "fondo": "assets/fondos/fondo_cuarto_1_compra_camaras.jpg",
+        "texto": "Compra cámaras de seguridad. Equipos de vigilancia. Graba su casa desde todos los ángulos.",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo_camara.wav"
+    },
+    {
+        "narrador": true,
+        "fondo": "assets/fondos/fondo_cuarto_1_compra_camaras.jpg",
+        "texto": "Pasa la noche despierto, mirando las pantallas, esperando ver un movimiento. Algo.",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo_camara.wav"
+    },
+    {
+        "personaje": "Hitori",
+        "imagen_personaje": "assets/personajes/hitori/personaje_principal_hitori.png",
+        "fondo": "assets/fondos/fondo_cuarto_1_compra_camaras.jpg",
+        "texto": "Se que hay alguien que entra a mi casa, lo sé, no dejare que me atormentes de esa manera.",
+        "lado_personaje": "izquierda",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo_camara.wav"
+    },
+    {
+        "narrador": true,
+        "fondo": "assets/fondos/fondo_negro.jpg",
+        "texto": "Ese día no fue al trabajo, simplemente se dedicó a comprar cámaras para su casa y a colocarlas.",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo_camara.wav"
+    },
+    {
+        "narrador": true,
+        "fondo": "assets/fondos/fondo_negro.jpg",
+        "texto": "Su jefe lo llamo para preguntarle que le había pasado, pero no respondió...",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo_camara.wav"
+    },
+    {
+        "narrador": true,
+        "fondo": "assets/fondos/fondo_negro.jpg",
+        "texto": "Simplemente quería volver a sentirse 'seguro' de nuevo, volver a su vida normal.",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo_camara.wav"
+    },
+    {
+        "narrador": true,
+        "fondo": "assets/fondos/fondo_negro.jpg",
+        "texto": "Pasan los días y sigue sin regresar a su trabajo, no puede quitarse de la cabeza esas cámaras que\nencontró",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo_camara.wav"
+    },
+    {
+        "narrador": true,
+        "fondo": "assets/fondos/fondo_negro.jpg",
+        "texto": "Pero...",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo_camara.wav"
+    },
+    {
+        "narrador": true,
+        "fondo": "assets/fondos/fondo_negro.jpg",
+        "texto": "Las cámaras siguen apareciendo, no sabe cómo, siempre encuentra alguna cámara dentro de su casa",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo_camara.wav"
+    },
+    {
+        "narrador": true,
+        "fondo": "assets/fondos/fondo_negro.jpg",
+        "texto": "Aunque revise las cámaras no sabe quién entra y las coloca, no sabe nada...",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo_camara.wav"
+    },
+    {
+        "narrador": true,
+        "fondo": "assets/fondos/fondo_negro.jpg",
+        "texto": "No regresa al trabajo, lo llaman, no responde y terminan por despedirlo.",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo_camara.wav"
+    },
+    {
+        "narrador": true,
+        "fondo": "assets/fondos/fondo_negro.jpg",
+        "texto": "A él no le importa. Ya no piensa en el trabajo. Solo piensa en las cámaras.",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo_camara.wav"
+    },
+    {
+        "narrador": true,
+        "fondo": "assets/fondos/fondo_negro.jpg",
+        "texto": "En los ojos que lo vigilan..."
+    },
+    {
+        "narrador": true,
+        "fondo": "assets/fondos/fondo_negro.jpg",
+        "texto": "Pasan semanas.",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo_final.wav"
+    },
+    {
+        "narrador": true,
+        "fondo": "assets/fondos/fondo_negro.jpg",
+        "texto": "La casa está cubierta de cámaras. No sales de casa. No hablas con nadie. Te alimentas de comida a\ndomicilio, duermes poco, miras pantallas todo el día.",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo_final.wav"
+    },
+    {
+        "narrador": true,
+        "fondo": "assets/fondos/fondo_negro.jpg",
+        "texto": "El sonido de tu respiración, los sonidos que a veces escuchas dentro de la casa, que al parecer no\nson nada, todo eso es lo único que escuchas todo el día.",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo_final.wav"
+    },
+    {
+        "narrador": true,
+        "fondo": "assets/fondos/fondo_negro.jpg",
+        "texto": "Parece que tienes esquizofrenia, pero no es eso, es imposible, esta es la primera vez que pasa algo\nparecido.",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo_final.wav"
+    },
+    {
+        "narrador": true,
+        "fondo": "assets/fondos/fondo_negro.jpg",
+        "texto": "Pasan más y más días, sigues viendo las cámaras dentro de tu casa, pero aún no encuentras al\nresponsable.",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo_final.wav"
+    },
+    {
+        "narrador": true,
+        "fondo": "assets/fondos/fondo_negro.jpg",
+        "texto": "Pero pasa algo...",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo_final.wav"
+    },
+    {
+        "personaje": "Hitori",
+        "fondo": "assets/fondos/fondo_negro.jpg",
+        "texto": "No he escuchado ruidos desde hace días... pero sigo viendo movimientos.",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo_final.wav"
+    },
+    {
+        "personaje": "Hitori",
+        "fondo": "assets/fondos/fondo_negro.jpg",
+        "texto": "Tal vez solo no he dormido lo suficiente, pero no puedo darme ese lujo.",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo_final.wav"
+    },
+    {
+        "narrador": true,
+        "fondo": "assets/fondos/fondo_cuarto_2.jpg",
+        "texto": "Se sienta frente a seis monitores. Revisa cada uno. No confía en la grabación automática. Mira en\nvivo.",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo_final.wav"
+    },
+    {
+        "personaje": "Hitori",
+        "fondo": "assets/fondos/fondo_cuarto_2.jpg",
+        "texto": "Si dejo de mirar... aparecerán más.",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo_final.wav"
+    },
+    {
+        "personaje": "Hitori",
+        "fondo": "assets/fondos/fondo_cuarto_2.jpg",
+        "texto": "No puedo dormir mucho. Tengo que seguir vigilando.",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo_final.wav"
+    },
+    {
+        "personaje": "Hitori",
+        "fondo": "assets/fondos/fondo_hitori_demacrado.jpg",
+        "texto": "Están ahí. A veces los siento. Cuando cierro los ojos. Cuando respiro...",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo_final.wav"
+    },
+    {
+        "personaje": "Hitori",
+        "fondo": "assets/fondos/fondo_hitori_demacrado.jpg",
+        "texto": "Pero porque ahora no hacen ruido. ¿Por qué no hacen ruido?...",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo_final.wav"
+    },
+    {
+        "narrador": true,
+        "fondo": "assets/fondos/fondo_negro.jpg",
+        "texto": "No hay cámaras nuevas. No hay ruidos. Solo el silencio.",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo_final.wav"
+    },
+    {
+        "narrador": true,
+        "fondo": "assets/fondos/fondo_negro.jpg",
+        "texto": "Sin embargo, el personaje empieza a escuchar voces tenues, como susurros desde las paredes.",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo_final.wav"
+    },
+    {
+        "personaje": "Hitori",
+        "fondo": "assets/fondos/fondo_negro.jpg",
+        "texto": "Shhh... escuchen... están hablando. No entiendo qué dicen, pero... están hablando.",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo_final.wav",
+        "efecto_sonido": "assets/sonidos/efectos_sonidos/susurros.wav"
+    },
+    {
+        "personaje": "Hitori",
+        "fondo": "assets/fondos/fondo_negro.jpg",
+        "texto": "¿Qué es esto? No estoy loco, alguien debió de poner altavoces aquí cerca, !no estoy loco¡…",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo_final.wav"
+    },
+    {
+        "narrador": true,
+        "fondo": "assets/fondos/fondo_negro.jpg",
+        "texto": "Reproduce las grabaciones de las cámaras con sonido y no hay nada.",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo_final.wav"
+    },
+    {
+        "narrador": true,
+        "fondo": "assets/fondos/fondo_negro.jpg",
+        "texto": "Los monitores solo muestran una casa vacía. Una vida vacía.",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo_final.wav"
+    },
+    {
+        "narrador": true,
+        "fondo": "assets/fondos/fondo_negro.jpg",
+        "texto": "Pero él no lo ve así. Él siente que lo acompañan.",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo_final.wav"
+    },
+    {
+        "personaje": "Hitori",
+        "fondo": "assets/fondos/fondo_negro.jpg",
+        "texto": "Ya no estoy solo... ¿verdad?",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo_final.wav"
+    },
+    {
+        "narrador": true,
+        "fondo": "assets/fondos/fondo_negro.jpg",
+        "texto": "Y de pronto... el silencio.",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo_final.wav"
+    },
+    {
+        "narrador": true,
+        "fondo": "assets/fondos/fondo_negro.jpg",
+        "texto": "No puedes creer que ya no se escuche nada, es un poco raro, donde están esos ruidos, donde están\nesas cámaras.",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo_final.wav"
+    },
+    {
+        "narrador": true,
+        "fondo": "assets/fondos/fondo_negro.jpg",
+        "texto": "Pasa un día y ninguna cámara vuelve a aparecer, ningún ruido vuelve a escucharse...",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo_final.wav"
+    },
+    {
+        "narrador": true,
+        "fondo": "assets/fondos/fondo_negro.jpg",
+        "texto": "No hay más movimiento. Nada más que él mismo, sentado, esperando a que vuelva a suceder algo más.",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo_final.wav"
+    },
+    {
+        "narrador": true,
+        "fondo": "assets/fondos/fondo_negro.jpg",
+        "texto": "No sabe que hacer, perdió todo lo que le quedaba por obsesionarse con eso, no sabe que más hacer...",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo_final.wav"
+    },
+    {
+        "personaje": "Hitori",
+        "fondo": "assets/fondos/fondo_cuarto_noche_final.jpg",
+        "texto": "¿Ya no están aquí?",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo_final.wav"
+    },
+    {
+        "personaje": "Hitori",
+        "fondo": "assets/fondos/fondo_cuarto_noche_final.jpg",
+        "texto": "¿Por qué se fueron?",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo_final.wav"
+    },
+    {
+        "personaje": "Hitori",
+        "fondo": "assets/fondos/fondo_cuarto_noche_final.jpg",
+        "texto": "¿Por qué me dejaron solo?",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo_final.wav"
+    },
+    {
+        "personaje": "Hitori",
+        "fondo": "assets/fondos/fondo_cuarto_noche_final.jpg",
+        "texto": "¿Por qué ya no hay nadie conmigo?",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo_final.wav"
+    },
+    {
+        "personaje": "Hitori",
+        "fondo": "assets/fondos/fondo_cuarto_noche_final.jpg",
+        "texto": "¿Qué fue lo que hice mal?",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo_final.wav"
+    },
+    {
+        "narrador": true,
+        "fondo": "assets/fondos/fondo_cuarto_noche_final.jpg",
+        "texto": "Se queda mirando las pantallas.",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo_final.wav"
+    },
+    {
+        "narrador": true,
+        "fondo": "assets/fondos/fondo_cuarto_noche_final.jpg",
+        "texto": "Solo.",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo_final.wav"
+    },
+    {
+        "narrador": true,
+        "fondo": "assets/fondos/fondo_cuarto_noche_final.jpg",
+        "texto": "Ahora completamente solo...",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo_final.wav"
+    },
+    {
+        "narrador": true,
+        "fondo": "assets/fondos/fondo_cuarto_noche_final.jpg",
+        "texto": "",
+        "pregunta":"¿Y ahora?",
+        "mostrar_botones": true,
+        "opciones": [
+            {
+                "texto": "Pasar simplemente a un lugar más feliz...",
+                "archivo": "jsons/parte_6.json"
+            },
+            {
+                "texto": "No hacer nada, literalmente nada...",
+                "archivo": "jsons/parte_6_1.json"
+            }
+        ]
+    }
+]

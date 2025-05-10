@@ -1,0 +1,67 @@
+[
+    {
+        "narrador": false,
+        "personaje": "Hitori",
+        "imagen_personaje": "",
+        "fondo": "assets/fondos/fondo_negro.jpg",
+        "texto": "Hace años que no me comunico con mi mamá, ¿estará bien? No lo sé, lo único que tengo que hacer el día\nde hoy es ir a trabajar y regresar a jugar videojuegos en mi pc o simplemente ir a dormir.",
+        "lado_personaje": "izquierda",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo.wav", 
+        "efecto_sonido": "",
+        "tipo_efecto": ""
+    },
+    {
+        "personaje": "Hitori",
+        "fondo": "assets/fondos/fondo_negro.jpg",
+        "texto": "No sé por qué aun sigo trabajando ahí, mis compañeros me caen muy mal, mi jefe es un imbécil conmigo,\npero por lo menos la paga es decente o eso quiero creer.",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo.wav"
+    },
+    {
+        "personaje": "Hitori",
+        "fondo": "assets/fondos/fondo_negro.jpg",
+        "texto": "Pero bueno, no importa, solamente quiero ir a trabajar y llegar a casa, no me gustaría buscar otro\ntrabajo, no sabría que decir en las entrevistas de trabajo.",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo.wav"
+    },
+    {
+        "personaje": "Hitori",
+        "imagen_personaje": "assets/personajes/hitori/personaje_principal_hitori.png",
+        "fondo": "assets/fondos/fondo_cuarto_1.jpg",
+        "texto": "¿Qué hora es?",
+        "lado_personaje": "izquierda",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo.wav", 
+        "efecto_sonido": "assets/sonidos/efectos_sonidos/alarma.wav",
+        "tipo_efecto": "alarma"
+    },
+    {
+        "personaje": "Hitori",
+        "imagen_personaje": "assets/personajes/hitori/personaje_principal_hitori.png",
+        "fondo": "assets/fondos/fondo_cuarto_1.jpg",
+        "texto": "Ya son las 12 de la tarde, todavía me da tiempo para desayunar algo y llegar a mi trabajo.",
+        "lado_personaje": "izquierda",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo.wav"
+    },
+    {
+        "personaje": "Hitori",
+        "imagen_personaje": "assets/personajes/hitori/personaje_principal_hitori.png",
+        "fondo": "assets/fondos/fondo_refrigerador.jpg",
+        "texto": "¿Solamente un pedazo de pizza y un pollo frio?",
+        "lado_personaje": "izquierda",
+        "musica_fondo": "assets/sonidos/musica/sonido_fondo.wav",
+        "pregunta":"¿Solamente un pedazo de pizza y un pollo frio?",
+        "mostrar_botones": true,
+        "opciones": [
+            {
+                "texto": "Comer el pedazo de pizza frío",
+                "archivo": "jsons/parte_2.json"
+            },
+            {
+                "texto": "Comer el pollo frío",
+                "archivo": "jsons/parte_2.json"
+            },
+            {
+                "texto": "Saltarse el desayuno",
+                "archivo": "jsons/parte_2_1.json"
+            }
+        ]
+    }
+]
