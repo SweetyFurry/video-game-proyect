@@ -18,9 +18,11 @@ from src.carga_imagenes import cargar_imagen
 from src.botones import Boton
 from src.audio import audio
 from src.sistema_guardado import guardar_partida
+# Lo nuevo
 from src.utils import cargar_dialogos
 from src.utils import renderizar_texto_simple
 from src.utils import resetear_estado_texto
+
 
 def bucle_dialogo(pantalla, archivo_json="jsons/parte_1.json", estado_guardado=None):
     if estado_guardado:
