@@ -4,6 +4,7 @@ __pycache__/
 *.py[cod]
 *$py.class
 partida_guardada/
+partida_guardada/guardado_1.json
 
 # Ignora archivos de entorno virtual
 venv/
