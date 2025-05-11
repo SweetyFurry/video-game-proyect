@@ -99,7 +99,8 @@ def bucle_dialogo(pantalla, archivo_json="jsons/parte_1.json", estado_guardado=N
         if indice_dialogo > 0:
             indice_dialogo -= 1
             texto_total = dialogos[indice_dialogo]['texto']
-            resetear_estado_texto()
+            letras_mostradas, texto_completo, ultimo_tiempo = resetear_estado_texto(
+            letras_mostradas, texto_completo, ultimo_tiempo)
             hay_opciones = False
             tiene_opciones_pendientes = False
             dialogo_tiene_opciones = False
@@ -124,7 +125,8 @@ def bucle_dialogo(pantalla, archivo_json="jsons/parte_1.json", estado_guardado=N
             
             indice_dialogo = len(dialogos) - 1
             texto_total = dialogos[indice_dialogo]['texto']
-            resetear_estado_texto()
+            letras_mostradas, texto_completo, ultimo_tiempo = resetear_estado_texto(
+            letras_mostradas, texto_completo, ultimo_tiempo)
             hay_opciones = False
             tiene_opciones_pendientes = False
             dialogo_tiene_opciones = False
@@ -171,7 +173,8 @@ def bucle_dialogo(pantalla, archivo_json="jsons/parte_1.json", estado_guardado=N
         else:
             indice_dialogo += 1
         
-        resetear_estado_texto()
+        letras_mostradas, texto_completo, ultimo_tiempo = resetear_estado_texto(
+        letras_mostradas, texto_completo, ultimo_tiempo)
         
         if indice_dialogo >= len(dialogos):
             corriendo = False
