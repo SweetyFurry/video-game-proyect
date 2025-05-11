@@ -1,15 +1,18 @@
+# Importaciones:
 from pygame import mixer
 from pygame import time
 from pygame import USEREVENT
 from pygame import event
 from collections import defaultdict
 
+# Clase para manejar el sistema de audio
 class SistemaAudio:
 
-
+    # Constructor de la clase SistemaAudio
     def __init__(self):
-        """44100: calidad estándar de audio, -16: audio de buena calidad,
-        2: estéreo, 512: tamaño del búfer, menor da menos latencia"""
+        """Inicia el sistema de audio y carga los sonidos"""
+        # 44100: calidad estándar de audio, -16: audio de buena calidad,
+        # 2: estéreo, 512: tamaño del búfer, menor da menos latencia
         mixer.init(frequency = 44100, size = -16,
                     channels = 2, buffer = 512)
         self.musica_actual = None
@@ -19,51 +22,54 @@ class SistemaAudio:
         self.efectos_en_curso = defaultdict(int)
         self.ultimo_efecto_por_tipo = {}
 
-    """Carga un sonido y lo almacena en caché"""
+    # Carga un sonido y lo almacena en caché
     def cargar_sonido(self, ruta, tipo="efecto"):
-        """Si la ruta esta ya cargada se salta el if, si no..."""
+        """Carga un sonido y lo almacena en caché para evitar cargarlo varias veces"""
+        # Si la ruta esta ya cargada se salta el if, si no
         if ruta not in self.sonidos_cargados:
-            """Se guarda el sonido en una variable"""
+            # Se guarda el sonido en una variable
             sound = mixer.Sound(ruta)
-            """Se guarda el sonido en un diccionario"""
+            # Se guarda el sonido en un diccionario
             self.sonidos_cargados[ruta] = sound
             return sound
         return self.sonidos_cargados[ruta]
 
-    """reproduce musica y crea un bucle infinito hasta que ya no exista el archivo"""
+    # Reproduce música en bucle
     def reproducir_musica(self, ruta, loops=-1):
-        """Si la musica es diferente a la ruta dada..."""
+        """Carga la musica y la reproduce en un bucle infinito"""
+        # Si la musica es diferente a la ruta dada...
         if self.musica_actual != ruta:
-            """Se detiene la musica y carga esa nueva musica en los sonidos"""
+            # Se detiene la musica y carga esa nueva musica en los sonidos
             self.detener_musica()
             musica = self.cargar_sonido(ruta, tipo="musica")
             if musica:
-                """Usamos la musica actual"""
+                # Usamos la musica actual
                 self.musica_actual = ruta
                 musica.set_volume(self.volumen_musica_defecto)
                 musica.play(loops=loops)
 
-    """Reproduce un efecto de sonido solo si no está ya reproduciéndose"""
+    # Reproduce un efecto de sonido
     def reproducir_efecto(self, ruta, tipo=None):
-        """Si el efecto ya fue reproducido"""
+        """Carga el efecto y lo reproduce"""
+        # Si el efecto ya fue reproducido
         if tipo and tipo in self.ultimo_efecto_por_tipo:
             tiempo_actual = time.get_ticks()
             tiempo_transcurrido = tiempo_actual - self.ultimo_efecto_por_tipo[tipo]
             """Si no ha pasado medio segundo, entonces el sonido no se reproduce"""
             if tiempo_transcurrido <= 500:
                 return False
-        """carga y guarda el sonido en efecto"""
+        # carga y guarda el sonido en efecto
         efecto = self.cargar_sonido(ruta)
         if efecto:
-            """Verificar si ya se está reproduciendo este efecto y si lo esta ignora el sonido"""
+            # Verificar si ya se está reproduciendo este efecto y si lo esta ignora el sonido
             if self.efectos_en_curso[ruta] > 0:
                 return False
             self.efectos_en_curso[ruta] += 1
-            """Si el tipo de efecto es igual, entonces se guarda el tiempo en el que se intento reproducir"""
+            # Si el tipo de efecto es igual, entonces se guarda el tiempo en el que se intento reproducir
             if tipo:
                 self.ultimo_efecto_por_tipo[tipo] = time.get_ticks()
             
-            """Limpia el efecto en curso para que se pueda volver a reproducir el sonido"""
+            # Limpia el efecto en curso para que se pueda volver a reproducir el sonido
             def limpiar():
                 self.efectos_en_curso[ruta] -= 1
 
@@ -71,33 +77,37 @@ class SistemaAudio:
             efecto.set_volume(self.volumen_efectos_defecto)
             canal = efecto.play()
             if canal:
-                """detectan cuando un sonido ha terminado de reproducirse para realizar alguna accion"""
+                # detectan cuando un sonido ha terminado de reproducirse para realizar alguna accion
                 canal.set_endevent(USEREVENT + len(self.efectos_en_curso))
                 event.set_allowed(USEREVENT + len(self.efectos_en_curso))
                 return True
         return False
 
-
+    # Detiene la música actual
     def detener_musica(self):
+        """Detiene la música actual y la elimina de la lista de sonidos cargados"""
+
         if self.musica_actual:
             mixer.stop()
             self.musica_actual = None
 
-
+    # Detiene todos los efectos de sonido
     def set_volumen_musica(self, volumen):
         """limita el valor de volumen entre 0.0 y 1.0 y guarda el volumen en defectos"""
         self.volumen_musica_defecto = max(0.0, min(1.0, volumen))
-        """Si existe algun tipo de musica entonces baja el audio o lo deja igual"""
+        # Si existe algun tipo de musica entonces baja el audio o lo deja igual
         if self.musica_actual:
             self.sonidos_cargados[self.musica_actual].set_volume(self.volumen_musica_defecto)
 
-
+    # Cambia el volumen de los efectos de sonido
     def set_volumen_efectos(self, volumen):
         """limita el valor de volumen entre 0.0 y 1.0 y guarda el volumen en defectos"""
         self.volumen_efectos_defecto = max(0.0, min(1.0, volumen))
 
-    """Maneja eventos de finalización de sonidos"""
+    # Cambia el volumen de un efecto específico
     def actualizar(self, eventos):
+        """Actualiza el volumen de los efectos de sonido y verifica si se han reproducido"""
+        
         for evento in eventos:
             if evento.type >= USEREVENT and evento.type < USEREVENT + 100:
                 """Si ruta esta en efectos en curso..."""

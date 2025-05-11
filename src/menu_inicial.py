@@ -1,3 +1,4 @@
+# Importaciones:
 from pygame import font
 from pygame import mouse
 from pygame import event
@@ -12,9 +13,13 @@ from src.configuraciones import fuente_letras
 from src.botones import Boton
 from src.carga_imagenes import cargar_imagen
 
+# Funcion para mostrar el menu inicial
 def mostrar_menu_inicial(pantalla):
+    """ Funcion que contiene la configuracion del menu inicial """
+
     fuente_titulo = font.Font(fuente_letras, 50)
 
+    # Configuracion de los botones
     boton_nueva_partida = Boton(
         posicion_x = ancho_pantalla // 2 - 255, posicion_y = alto_pantalla // 2 - 100,
         ancho = 500, alto = 50,
@@ -23,6 +28,7 @@ def mostrar_menu_inicial(pantalla):
         color_hover = (120, 120, 120, 200)
         )
 
+    # Configuracion de los botones
     boton_cargar_partida = Boton(
         posicion_x = ancho_pantalla // 2 - 255, posicion_y = alto_pantalla //2,
         ancho = 500, alto = 50,
@@ -31,6 +37,7 @@ def mostrar_menu_inicial(pantalla):
         color_hover = (120, 120, 120, 200)
         )
 
+    # Configuracion de la pantalla
     while True:
         imagen_fondo = cargar_imagen("assets/fondos/fondo_cuarto_2.jpg", (ancho_pantalla, alto_pantalla))
         pantalla.blit(imagen_fondo, (0, 0))
