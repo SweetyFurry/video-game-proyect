@@ -18,21 +18,9 @@ from src.carga_imagenes import cargar_imagen
 from src.botones import Boton
 from src.audio import audio
 from src.sistema_guardado import guardar_partida
-
-def cargar_dialogos(archivo_json):
-    with open(archivo_json, "r", encoding="utf-8") as archivo:
-        return load(archivo)
-
-def renderizar_texto_simple(pantalla, texto, fuente):
-    lineas = texto.splitlines()
-    y_pos = alto_pantalla // 2 - (len(lineas) * fuente.get_height()) // 2
-    
-    for linea in lineas:
-        if linea.strip():
-            render = fuente.render(linea, True, (255, 255, 255))
-            x_pos = ancho_pantalla // 2 - render.get_width() // 2
-            pantalla.blit(render, (x_pos, y_pos))
-        y_pos += fuente.get_height()
+from src.utils import cargar_dialogos
+from src.utils import renderizar_texto_simple
+from src.utils import resetear_estado_texto
 
 def bucle_dialogo(pantalla, archivo_json="jsons/parte_1.json", estado_guardado=None):
     if estado_guardado:
@@ -83,11 +71,9 @@ def bucle_dialogo(pantalla, archivo_json="jsons/parte_1.json", estado_guardado=N
                             100, 30, "Siguiente", (0, 0, 0, 0),
                             (0, 0, 0, 0), 20)
 
-    def resetear_estado_texto():
-        nonlocal letras_mostradas, texto_completo, ultimo_tiempo
-        letras_mostradas = 0
-        texto_completo = False
-        ultimo_tiempo = time.get_ticks()
+    letras_mostradas, texto_completo, ultimo_tiempo = resetear_estado_texto(
+        letras_mostradas, texto_completo, ultimo_tiempo
+    )
 
     def guardar_progreso():
         estado = {
