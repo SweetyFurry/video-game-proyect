@@ -22,6 +22,7 @@ from src.sistema_guardado import guardar_partida
 from src.utils import cargar_dialogos
 from src.utils import renderizar_texto_simple
 from src.utils import resetear_estado_texto
+from src.utils import retroceder_dialogo
 
 
 def bucle_dialogo(pantalla, archivo_json="jsons/parte_1.json", estado_guardado=None):
