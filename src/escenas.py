@@ -1,3 +1,4 @@
+# Importaciones
 from pygame import event
 from pygame import display
 from pygame import font
@@ -18,23 +19,16 @@ from src.carga_imagenes import cargar_imagen
 from src.botones import Boton
 from src.audio import audio
 from src.sistema_guardado import guardar_partida
+from src.utils import cargar_dialogos
+from src.utils import renderizar_texto_simple
+from src.utils import resetear_estado_texto
+from src.utils import retroceder_dialogo
 
-def cargar_dialogos(archivo_json):
-    with open(archivo_json, "r", encoding="utf-8") as archivo:
-        return load(archivo)
-
-def renderizar_texto_simple(pantalla, texto, fuente):
-    lineas = texto.splitlines()
-    y_pos = alto_pantalla // 2 - (len(lineas) * fuente.get_height()) // 2
-    
-    for linea in lineas:
-        if linea.strip():
-            render = fuente.render(linea, True, (255, 255, 255))
-            x_pos = ancho_pantalla // 2 - render.get_width() // 2
-            pantalla.blit(render, (x_pos, y_pos))
-        y_pos += fuente.get_height()
-
+# Funcion principal del bucle de dialogo:
 def bucle_dialogo(pantalla, archivo_json="jsons/parte_1.json", estado_guardado=None):
+    """Bucle principal del diálogo que organiza los json, contiene configuracion de los botones
+    y mantiene la logica de las escenas"""
+
     if estado_guardado:
         dialogos = cargar_dialogos(estado_guardado['archivo_actual'])
         indice_dialogo = estado_guardado['dialogo_actual']
@@ -69,6 +63,7 @@ def bucle_dialogo(pantalla, archivo_json="jsons/parte_1.json", estado_guardado=N
     if musica_actual:
         audio.reproducir_musica(musica_actual)
 
+    # Creacion de botones:
     boton_guardar = Boton(ancho_pantalla - 105, 5, 100, 30, "Guardar",
                         (0, 0, 0, 0), (0, 204, 35, 30), 20)
 
@@ -83,13 +78,15 @@ def bucle_dialogo(pantalla, archivo_json="jsons/parte_1.json", estado_guardado=N
                             100, 30, "Siguiente", (0, 0, 0, 0),
                             (0, 0, 0, 0), 20)
 
-    def resetear_estado_texto():
-        nonlocal letras_mostradas, texto_completo, ultimo_tiempo
-        letras_mostradas = 0
-        texto_completo = False
-        ultimo_tiempo = time.get_ticks()
+    # Reiniciar el estado de las variables para la animacion del texto
+    letras_mostradas, texto_completo, ultimo_tiempo = resetear_estado_texto(
+        letras_mostradas, texto_completo, ultimo_tiempo
+    )
 
+    # Funcion para guardar el progreso actual:
     def guardar_progreso():
+        """Guarda el progreso actual en un archivo JSON"""
+
         estado = {
             'archivo_actual': archivo_json,
             'dialogo_actual': indice_dialogo,
@@ -102,8 +99,10 @@ def bucle_dialogo(pantalla, archivo_json="jsons/parte_1.json", estado_guardado=N
         }
         guardar_partida(estado)
 
-
+    # Funcion para retroceder en el dialogo:
     def retroceder_dialogo():
+        """Retrocede al dialogo anterior, si existe"""
+
         nonlocal indice_dialogo, dialogos, archivo_json, texto_total,\
                 letras_mostradas, texto_completo, ultimo_tiempo,\
                 historial, hay_opciones, botones_opciones,\
@@ -113,7 +112,8 @@ def bucle_dialogo(pantalla, archivo_json="jsons/parte_1.json", estado_guardado=N
         if indice_dialogo > 0:
             indice_dialogo -= 1
             texto_total = dialogos[indice_dialogo]['texto']
-            resetear_estado_texto()
+            letras_mostradas, texto_completo, ultimo_tiempo = resetear_estado_texto(
+            letras_mostradas, texto_completo, ultimo_tiempo)
             hay_opciones = False
             tiene_opciones_pendientes = False
             dialogo_tiene_opciones = False
@@ -131,6 +131,7 @@ def bucle_dialogo(pantalla, archivo_json="jsons/parte_1.json", estado_guardado=N
                 historial.pop()
             return True
         
+        # Si no hay dialogo anterior, retroceder al anterior estado guardado
         elif historial:
             estado_anterior = historial.pop()
             archivo_json = estado_anterior['archivo']
@@ -138,7 +139,8 @@ def bucle_dialogo(pantalla, archivo_json="jsons/parte_1.json", estado_guardado=N
             
             indice_dialogo = len(dialogos) - 1
             texto_total = dialogos[indice_dialogo]['texto']
-            resetear_estado_texto()
+            letras_mostradas, texto_completo, ultimo_tiempo = resetear_estado_texto(
+            letras_mostradas, texto_completo, ultimo_tiempo)
             hay_opciones = False
             tiene_opciones_pendientes = False
             dialogo_tiene_opciones = False
@@ -156,13 +158,17 @@ def bucle_dialogo(pantalla, archivo_json="jsons/parte_1.json", estado_guardado=N
         
         return False
 
+    # Funcion para avanzar en el dialogo:
     def avanzar_dialogo(nuevo_archivo=None):
+        """Avanza al siguiente dialogo, si existe"""
+
         nonlocal indice_dialogo, texto_completo, letras_mostradas,\
                 ultimo_tiempo, dialogos, archivo_json, corriendo,\
                 hay_opciones, botones_opciones, historial,\
                 tiene_opciones_pendientes, dialogo_tiene_opciones,\
                 musica_actual
-            
+        
+        # Si hay opciones pendientes, no se puede avanzar
         historial.append({
             'archivo': archivo_json,
             'indice': indice_dialogo,
@@ -185,16 +191,19 @@ def bucle_dialogo(pantalla, archivo_json="jsons/parte_1.json", estado_guardado=N
         else:
             indice_dialogo += 1
         
-        resetear_estado_texto()
+        letras_mostradas, texto_completo, ultimo_tiempo = resetear_estado_texto(
+        letras_mostradas, texto_completo, ultimo_tiempo)
         
         if indice_dialogo >= len(dialogos):
             corriendo = False
 
+    # Asignar acciones a los botones:
     boton_guardar.asignar_accion(guardar_progreso)
     boton_salir.asignar_accion(lambda: None)
     boton_anterior.asignar_accion(retroceder_dialogo)
     boton_siguiente.asignar_accion(lambda: avanzar_dialogo())
 
+    # Bucle principal del dialogo:
     while corriendo:
         eventos = event.get()
         
@@ -234,6 +243,7 @@ def bucle_dialogo(pantalla, archivo_json="jsons/parte_1.json", estado_guardado=N
                         boton.accion()
                         break
             
+            # Cambiar el color del boton al pasar el mouse por encima
             if e.type == MOUSEMOTION:
                 boton_anterior.hover = boton_anterior.rect.collidepoint(e.pos)
                 if boton_anterior.hover:
@@ -271,6 +281,7 @@ def bucle_dialogo(pantalla, archivo_json="jsons/parte_1.json", estado_guardado=N
 
         pantalla.fill((0, 0, 0))
         
+        # Si hay un fondo de pantalla, dibujarlo
         if indice_dialogo < len(dialogos):
             entrada = dialogos[indice_dialogo]
             texto_total = entrada["texto"]
@@ -283,6 +294,7 @@ def bucle_dialogo(pantalla, archivo_json="jsons/parte_1.json", estado_guardado=N
                 else:
                     audio.detener_musica()
             
+            # Si hay un efecto de sonido, reproducirlo
             efecto_sonido = entrada.get("efecto_sonido", None)
             tipo_efecto = entrada.get("tipo_efecto", efecto_sonido)
             if efecto_sonido and letras_mostradas == 0:
@@ -290,6 +302,7 @@ def bucle_dialogo(pantalla, archivo_json="jsons/parte_1.json", estado_guardado=N
             
             dialogo_tiene_opciones = "opciones" in entrada
             
+            # Si hay un fondo de pantalla, cargarlo
             nuevo_fondo = entrada.get("fondo", "")
             if nuevo_fondo and (fondo_actual != nuevo_fondo or fondo_img is None):
                 try:
@@ -312,6 +325,7 @@ def bucle_dialogo(pantalla, archivo_json="jsons/parte_1.json", estado_guardado=N
                 
                 renderizar_texto_simple(pantalla, texto_total[:letras_mostradas], fuente_narrador)
                 
+                # Si el texto se ha completado y hay opciones, mostrarlas
                 if texto_completo and dialogo_tiene_opciones and not botones_opciones:
                     tiene_opciones_pendientes = True
                     hay_opciones = True
@@ -337,6 +351,7 @@ def bucle_dialogo(pantalla, archivo_json="jsons/parte_1.json", estado_guardado=N
                 draw.rect(caja_texto, (255, 255, 255), (0, 0, 1000, 110), border_radius=7)
                 draw.rect(caja_texto, (0, 0, 0, 160), (2, 2, 996, 106), border_radius=5)
 
+                # Animar el texto
                 if not texto_completo:
                     tiempo_actual = time.get_ticks()
                     if tiempo_actual - ultimo_tiempo >= 30:
@@ -375,6 +390,7 @@ def bucle_dialogo(pantalla, archivo_json="jsons/parte_1.json", estado_guardado=N
                         botones_opciones.append(nuevo_boton)
                         y_pos += 70
 
+        # Si no hay opciones, limpiar la lista de botones
         boton_guardar.dibujar(pantalla)
         boton_salir.dibujar(pantalla)
         boton_anterior.dibujar(pantalla)
@@ -387,6 +403,7 @@ def bucle_dialogo(pantalla, archivo_json="jsons/parte_1.json", estado_guardado=N
             boton_siguiente.color_normal = (100, 100, 100, 100)
             boton_siguiente.color_hover = (100, 100, 100, 100)
         
+        # Dibujar el boton de siguiente
         boton_siguiente.dibujar(pantalla)
         boton_siguiente.color_normal = color_original_normal
         boton_siguiente.color_hover = color_original_hover

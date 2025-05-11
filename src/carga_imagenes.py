@@ -1,7 +1,10 @@
+# Importaciones:
 from pygame import image
 from pygame import transform
+
 # Cargamos las imágenes una sola vez y las almacenamos en un diccionario
 imagenes_cargadas = {}
+
 # Las imagenes que se redimensionan son solo las que pasamos como argumento su ancho y alto (tamaño)
 def cargar_imagen(ruta, tamaño=None):
     """Carga una imagen desde la ruta especificada y la redimensiona si se proporciona un tamaño."""

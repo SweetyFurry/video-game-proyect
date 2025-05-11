@@ -1,3 +1,4 @@
+# Importaciones:
 from pygame import Rect
 from pygame import font
 from pygame import Surface
@@ -8,15 +9,20 @@ from pygame import MOUSEBUTTONDOWN
 from src.configuraciones import fuente_letras
 from src.audio import audio
 
+# Clase Boton:
 class Boton:
+    """Clase para crear un boton con un rectangulo y un texto"""
 
-    """Se declara el constructor para crear un boton"""
+    # Constructor de la clase Boton:
     def __init__(self, posicion_x, posicion_y, ancho,
                 alto, texto,
                 color_normal = (80, 80, 80, 200),
                 color_hover = (120, 120, 120, 200),
                 tamano_texto = 25):
+        
         """Se crea un rectangulo con la posicion, ancho y alto que le damos"""
+
+        # Configuracion de los colores y la fuente
         self.rect = Rect(posicion_x, posicion_y, ancho, alto)
         self.texto = texto
         self.color_normal = color_normal
@@ -24,68 +30,71 @@ class Boton:
         self.color_actual = color_normal
         self.fuente = font.Font(fuente_letras, tamano_texto)
         self.mouse_en_boton = False
-        """se calcula el degradado de los bordes para que se vean proporcionales"""
+        # se calcula el degradado de los bordes para que se vean proporcionales
         self.degradado_borde = int(ancho * 0.3)
         self.accion = None
         self.tiempo_ultimo_clic = 0
         self.escala = 1.0
         self.sonido_clic = "assets/sonidos/efectos_sonidos/click.wav"
 
-
+    # Metodo para cambiar el sonido de clic
     def dibujar(self, superficie):
-        """Si el boton es completamente transparente..."""
+        """ Configuracion del boton y su color """
+
+        # Si el boton es completamente transparente
         if self.color_actual[3] == 0:
-            """Se renderiza el texto con la fuente y color blanco"""
+            # Se renderiza el texto con la fuente y color blanco
             texto_render = self.fuente.render(self.texto, True, (255, 255, 255))
-            """genera un rectangulo del tamaño del texto y lo centra"""
+            # genera un rectangulo del tamaño del texto y lo centra
             tamanio_rectangulo = texto_render.get_rect(center = self.rect.center)
-            """Pinta el texto en la superficie de la posicion del rectangulo invisible"""
+            # Pinta el texto en la superficie de la posicion del rectangulo invisible
             superficie.blit(texto_render, tamanio_rectangulo)
         else:
-            """Se crea una superficie transparente del tamaño del boton"""
+            # Se crea una superficie transparente del tamaño del boton
             superficie_transparente = Surface((self.rect.width, self.rect.height), SRCALPHA)
-            """Se recorre el ancho del boton desde 0 px hasta x px"""
+            # Se recorre el ancho del boton desde 0 px hasta x px
             for i in range(self.rect.width):
-                """se guarda la transparencia del color"""
+                # se guarda la transparencia del color
                 color_alfa = self.color_actual[3]
                 if i < self.degradado_borde:
-                    """se calcula el degradado del borde izquierdo para que se vean proporcionales de izquierda a derecha"""
+                    # se calcula el degradado del borde izquierdo para que se vean proporcionales de izquierda a derecha
                     color_alfa = int(color_alfa * (i / self.degradado_borde))
                 elif i > self.rect.width - self.degradado_borde:
-                    """Hace lo mismo que el codigo de arriba, pero en sentido contrario"""
+                    #Hace lo mismo que el codigo de arriba, pero en sentido contrario
                     color_alfa = int(color_alfa * ((self.rect.width - i) / self.degradado_borde))
-                """Se dibuja una linea vertical en la superficie transparente con el color y la transparencia calculada"""
+                # Se dibuja una linea vertical en la superficie transparente con el color y la transparencia calculada
                 draw.line(superficie_transparente, (*self.color_actual[:3], color_alfa), (i, 0), (i, self.rect.height))
-            """Pinta el texto en la superficie de la posicion del rectangulo"""
+            # Pinta el texto en la superficie de la posicion del rectangulo
             texto_render = self.fuente.render(self.texto, True, (255, 255, 255))
-            """Pinta el texto en el centro del rectangulo"""
+            # Pinta el texto en el centro del rectangulo
             tamanio_rectangulo = texto_render.get_rect(center = (self.rect.width // 2, self.rect.height // 2))
-            """Pinta el texto en la superficie de la posicion del rectangulo y centrado"""
+            # Pinta el texto en la superficie de la posicion del rectangulo y centrado
             superficie_transparente.blit(texto_render, tamanio_rectangulo)
-            """Pinta la superficie con el cuadro transparente y con el tamanio de x y y, para pegar todo ya"""
+            # Pinta la superficie con el cuadro transparente y con el tamanio de x y y, para pegar todo ya
             superficie.blit(superficie_transparente, self.rect.topleft)
 
-
+    # Metodo para asignar la accion al boton
     def manejar_evento(self, evento):
         """Detecta el movimiento del mouse..."""
+
         if evento.type == MOUSEMOTION:
-            """Verifica si el mouse esta encima del boton y si si, es true"""
+            # Verifica si el mouse esta encima del boton y si si, es true
             self.mouse_en_boton = self.rect.collidepoint(evento.pos)
             if self.mouse_en_boton:
                 self.color_actual = self.color_hover
             else:
                 self.color_actual = self.color_normal
-        """Detecta el movimiento del mouse y si dio click izquierdo..."""
+        # Detecta el movimiento del mouse y si dio click izquierdo...
         if evento.type == MOUSEBUTTONDOWN and evento.button == 1:
-            """Si el mouse esta sobre el raton y hay una accion"""
+            # Si el mouse esta sobre el raton y hay una accion
             if self.mouse_en_boton and self.accion:
-                """Reproduce el sonido de clic"""
+                # Reproduce el sonido de clic
                 audio.reproducir_efecto(self.sonido_clic)
-                """Realiza la accion"""
+                # Realiza la accion
                 self.accion()
                 return True
         return False
 
-
+    # Metodo para asignar la accion al boton
     def asignar_accion(self, funcion):
         self.accion = funcion

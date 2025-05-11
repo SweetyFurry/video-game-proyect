@@ -1,3 +1,4 @@
+# Importaciones:
 from pygame import init
 from pygame import quit
 from pygame import display
@@ -9,6 +10,7 @@ from src.menu_inicial import mostrar_menu_inicial
 from src.sistema_guardado import cargar_partida
 from src.escenas import bucle_dialogo
 
+# Funcion principal:
 def main():
     """Iniciamos los modulos de pygame"""
     init()
@@ -38,5 +40,6 @@ def main():
     quit()
     exit()
 
+# Ejecutar el juego:
 if __name__ == "__main__":
     main()
