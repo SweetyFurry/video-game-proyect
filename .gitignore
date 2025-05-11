@@ -1,9 +1,10 @@
+respaldo.py
 src/__pycache__/__init__.cpython-312.pyc
-        src/__pycache__/audio.cpython-312.pyc
-        src/__pycache__/botones.cpython-312.pyc
-        src/__pycache__/carga_imagenes.cpython-312.pyc
-        src/__pycache__/configuraciones.cpython-312.pyc
-        src/__pycache__/escenas.cpython-312.pyc
-        src/__pycache__/menu_inicial.cpython-312.pyc
-        src/__pycache__/sistema_guardado.cpython-312.pyc
-        src/__pycache__/utils.cpython-312.pyc
+src/__pycache__/audio.cpython-312.pyc
+src/__pycache__/botones.cpython-312.pyc
+src/__pycache__/carga_imagenes.cpython-312.pyc
+src/__pycache__/configuraciones.cpython-312.pyc
+src/__pycache__/escenas.cpython-312.pyc
+src/__pycache__/menu_inicial.cpython-312.pyc
+src/__pycache__/sistema_guardado.cpython-312.pyc
+src/__pycache__/utils.cpython-312.pyc
