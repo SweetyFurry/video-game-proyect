@@ -1,3 +1,4 @@
+# Importaciones:
 from pygame import font
 from pygame import mouse
 from pygame import event
@@ -12,7 +13,10 @@ from src.configuraciones import fuente_letras
 from src.botones import Boton
 from src.carga_imagenes import cargar_imagen
 
+# Configuracion del menu inicial
 def mostrar_menu_inicial(pantalla):
+    """Muestra el menú inicial del juego y maneja la interacción del usuario."""
+    
     fuente_titulo = font.Font(fuente_letras, 50)
 
     boton_nueva_partida = Boton(
